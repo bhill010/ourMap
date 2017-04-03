@@ -34,23 +34,82 @@ Development of the features in this app will be guided by Google Maps, Google Ge
 
 Our group consists of three members, Brandon, John, and Scott.
 
+#### ReactNative
+##### Brandon
+ - UI design
+ - User interface, user experience, app functionality
+#### APIs
+##### John
+ - Connect with google API
+ - Google Maps
+ - Google Geolocation
+ - API call limit issue
+ - How to process where objects are
+#### Auth
+##### Scott
+ - Input information and send stuff
+ - Auth0
+ - Storing data
+ - Sending geolocation data to John
+
+
 ## Implementation Timeline
 
 ### Day 1 (Monday)
+
+Goals: 
 - Complete authentication
 - Project structure complete
 	- Controllers, models, etc.
 
+Scott: Set up username and password authentication with JWTs using a NodeJS API
+
+Scott: Set up NodeJS API to store, create, and delete GPS coordinates and url source of media content
+
+John: Render Map onto screen
+
+Brandon: Render login form
+
+
 ### Day 2 
+
 - Track user movements/location
 	- Have a map-view complete that renders your location on the map
 
-### Day 3 & 4
-- Allow users to access camera and microphone on phone
-- Allow users to take photos and videos and upload to application
+Scott: Get GPS coordinates of user through mobile device 
 
-### Day 5 & 6
-- Display content on map using geolocation
+Brandon: Render home page and yay out the size and styling of the GoogleMap on home page
+
+John: Add coordinates for the markers and make markers appear on the Google Map
+
+### Day 3, 4, 5
+
+- Allow users to upload videos and photos
+- Create “submit content” form
+- Display items based on geo-location
+- Get camera to talk to our application
+
+John: Get camera to talk to application, check out react-native-camera
+
+Brandon: Render Index and Upload Pages; Render “submit content” form for users to submit pictures and videos; Form submission will go to backend; Display submitted content on the user’s map when it comes back from the backend
+
+Scott: Add coordinates to received picture/video information
+
+### Day 6
+
+- Seed database and test live functionality
+
+Brandon: Create demo page for app and use CSS styling
+
+John: Upload to emulator
+
+All: Mock up wireframes for demo page
+
+Scott: Collect screenshots and make GIFs of mobile features
+
+### Day 7
+
+- Production README
 
 ## Plan for getting users and reviews
 - We will each share with at least 10 friends and family and ask for good reviews
