@@ -4,9 +4,9 @@
 
 ourMap aims to connect users with their environment in their current location. Users will be able to upload and drop content (photo, video, media) in their current location. Other users will be able to see other users' "dropped" content when they are passing by a given area.
 
-We want to take advantage of the geolocation ability offered with mobile apps, similarly to how Yelp shows restaurants/businesses at location, but with user uploaded content. To seed our database with relevant user content, we will look into pulling data from Twitter.
+We want to take advantage of the geolocation ability offered with mobile apps, similarly to how Yelp shows restaurants/businesses at location, but with user uploaded content. 
 
-Development of the features in this app will be guided by Google Maps, Google Geocoding, and Twitter content. 
+Development of the features in this app will be guided by Google Maps and Google Geocoding. 
 
 ## Functionality and MVPs
 
@@ -23,6 +23,9 @@ Development of the features in this app will be guided by Google Maps, Google Ge
 
 
 ## Wireframes
+* [View Wireframes][wireframes]
+
+[wireframes]: /docs/wireframes
 
 ## Technologies and Technical Challenges
 
