@@ -20,6 +20,7 @@ Development of the features in this app will be guided by Google Maps, Google Ge
 
 - [ ] Allow users to comment on posted content
 - [ ] User profile page
+- [ ] Hello Test Bonus Feature
 
 ## Wireframes
 
