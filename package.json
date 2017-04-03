@@ -7,15 +7,14 @@
     "test": "jest"
   },
   "dependencies": {
-<<<<<<< HEAD
+
     "react": "15.4.2",
     "react-native": "0.42.3",
-    "react-native-maps": "^0.13.1"
-=======
+    "react-native-maps": "^0.13.1",
+
     "firebase": "^3.7.4",
     "react": "15.4.2",
     "react-native": "0.42.3"
->>>>>>> 2a16030172a2d49426d57e70607371ed849cad41
   },
   "devDependencies": {
     "babel-jest": "19.0.0",
