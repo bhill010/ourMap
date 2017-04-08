@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
+#import "AppDelegate.m"
 
 int main(int argc, char * argv[]) {
   @autoreleasepool {
