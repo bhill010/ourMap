@@ -1,34 +1,22 @@
 {
 	"photos": {
 		"photo1": {
-			"latitude": 37.785934,
-			"longitude": -122.406217,
-			"url": "https://res.cloudinary.com/ourmap/image/upload/v1491535407/emkooqclpnakfmiydgtl.jpg"
+			"latitude": 37.79093206548353,
+			"longitude": -122.39125107110694,
+			"url": "https://res.cloudinary.com/ourmap/image/upload/v1491793182/embarcadero-sf-4_zdial1.jpg",
+			"comment": "Nice view of the Bay Bridge!"
 		},
 		"photo2": {
-			"latitude": 37.785934,
-			"longitude": -122.406217,
-			"url": "https://res.cloudinary.com/ourmap/image/upload/v1491535407/emkooqclpnakfmiydgtl.jpg"
+			"latitude": 37.79093206548353,
+			"longitude": -122.39125107110694,
+			"url": "https://res.cloudinary.com/ourmap/image/upload/v1491793765/over-the-moon_gsbsy7.jpg",
+			"comment": "My favorite ice cream shop!"
 		},
 		"photo3": {
-			"latitude": 37.785934,
-			"longitude": -122.406217,
-			"url": "https://res.cloudinary.com/ourmap/image/upload/v1491535407/emkooqclpnakfmiydgtl.jpg"
-		},
-		"photo4": {
-			"latitude": 37.785934,
-			"longitude": -122.406217,
-			"url": "https://res.cloudinary.com/ourmap/image/upload/v1491535407/emkooqclpnakfmiydgtl.jpg"
-		},
-		"photo5": {
-			"latitude": 37.785934,
-			"longitude": -122.406217,
-			"url": "https://res.cloudinary.com/ourmap/image/upload/v1491535407/emkooqclpnakfmiydgtl.jpg"
-		},
-		"photo6": {
-			"latitude": 37.785934,
-			"longitude": -122.406217,
-			"url": "https://res.cloudinary.com/ourmap/image/upload/v1491535407/emkooqclpnakfmiydgtl.jpg"
+			"latitude": 37.79093206548353,
+			"longitude": -122.39125107110694,
+			"url": "https://res.cloudinary.com/ourmap/image/upload/v1491793812/IMG_3476_pltc91.jpg",
+			"comment": "Philz Coffee, best coffee!"
 		}
 	}
 }
