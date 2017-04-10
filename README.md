@@ -61,6 +61,61 @@ export default (state = INITIAL_STATE, action) => {
 
 ### Show Locations with "Dropped" Photos
 
+The home page displays a map with four photo images surrounding the user. Each photo image covers a specific radius positioned relative from the user: TopLeft, TopRight, BottomLeft, and BottomRight. The `onPress` on each photo image navigates the user to the photoIndex page, where users are able to view photos taken and pinned in that general area.
+
+
+#### HomePage
+
+<p align="center">
+    <img src="./photos/homePage.png" alt="Home Page" />
+</p>
+
+### PhotoIndexPage
+
+<p align="center">
+    <img src="./photos/photoIndexPage.png" alt="Home Page" />
+</p>
+
+
+The `getUserLocation` retrieves the user's current location and sets their coordinate to the local state. The `setPositionMarker` randomly selects a delta in a specific range and adds it to the user's coordinate to set the photo images in their respective corners: TopLeft, TopRight, BottomLeft, and BottomRight.  
+
+```javascript
+getUserLocation() {
+  this.watchId = navigator.geolocation.watchPosition (
+
+    (position) => {
+      let user = {latitude: position.coords.latitude, longitude: position.coords.longitude};
+      let userRegion = {latitude: position.coords.latitude, longitude: position.coords.longitude, latitudeDelta: 0.002, longitudeDelta: 0.002};
+
+      let markers = this.setPositionMarker(position.coords.latitude, position.coords.longitude);
+
+      this.setState({ userCoordinates: user});
+      this.setState({ region: userRegion });
+      this.setState({ markers: markers });
+    },
+    { enableHighAccuracy: false, timeout: 0, maximumAge: Infinity, distanceFilter: .001 },
+  );
+}
+
+setPositionMarker(lat, long){
+  let markers = [];
+
+  let deltas = [
+    [this.randomCoordinates(.0003, .0008), this.randomCoordinates(.0002, .0009), 'TopRight'],
+    [this.randomCoordinates(-.0003, -.0008), this.randomCoordinates(-.0002, -.0009),'BottomLeft'],
+    [this.randomCoordinates(.0003, .0008), this.randomCoordinates(-.0002, -.0009), 'TopLeft'],
+    [this.randomCoordinates(-.0003, -.0008), this.randomCoordinates(.0002, .0009), 'BottomRight']
+  ];
+
+  deltas.forEach((delta) => {
+    markers.push({coordinate: {latitude: lat + delta[0], longitude: long + delta[1]}, title: delta[2]});
+  });
+
+  return markers;
+}
+```
+
+
 
 ### Ability to Capture and Share Photos
 
