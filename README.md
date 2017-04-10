@@ -18,6 +18,46 @@ This mobile application was built with the following technologies:
 
 ### Authentication with Firebase and Redux
 
+The ourMap application uses Firebase with Redux for user authentication. To keep track of the user's login state, an Auth Reducer was created. The Auth Reducer keeps track of the user's email and password, as well as slices of state for errors, loading, and whether or not a user exists. Redux-thunk assisted with asynchronous calls to the Firebase database, while simpler inputs, such as the user's email and password, retrieved data directly from the login form and triggered actions that went directly to the Auth Reducer.
+
+The Auth Reducer's slice of state can be seen below.
+
+```javascript
+const INITIAL_STATE = {
+  email: '' ,
+  password: '',
+  user: null,
+  error: '',
+  loading: false
+};
+
+export default (state = INITIAL_STATE, action) => {
+
+  switch (action.type) {
+    case EMAIL_CHANGED:
+      return { ...state, email: action.payload };
+    case PASSWORD_CHANGED:
+      return { ...state, password: action.payload };
+    case LOGIN_USER:
+      return { ...state, loading: true, error: '' };
+    case LOGIN_USER_SUCCESS:
+      return { ...state,
+        ...INITIAL_STATE,
+        user: action.payload
+      };
+    case LOGIN_USER_FAIL:
+      return { ...state,
+        error: "Authentication Failed.",
+        password: '',
+        loading: false
+      };
+    case LOGOUT_USER:
+      return INITIAL_STATE;
+    default:
+      return state;
+  }
+};
+```
 
 ### Show Locations with "Dropped" Photos
 
